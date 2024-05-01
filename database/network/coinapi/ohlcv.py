@@ -23,7 +23,7 @@ class OHLCVDownloader(CoinAPIDownloader):
 
         super().__init__(verbose=verbose)
 
-        self._history_request_url = 'https://rest.coinapi.io/v1/ohlcv/OKEX_IDX_{}_USDT/history'
+        self._history_request_url = 'https://rest.coinapi.io/v1/ohlcv/BINANCE_SPOT_{}_USDT/history'
         self._latest_request_url = 'https://rest.coinapi.io/v1/ohlcv/{}/USD/latest'
         self._download_limit = 100000
         self._update_limit = 1000

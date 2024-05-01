@@ -23,14 +23,13 @@ class OHLCVDownloader(CoinAPIDownloader):
 
         super().__init__(verbose=verbose)
 
-        self._history_request_url = 'https://rest.coinapi.io/v1/ohlcv/{}/USD/history'
+        self._history_request_url = 'https://rest.coinapi.io/v1/ohlcv/OKEX_IDX_{}_USDT/history'
         self._latest_request_url = 'https://rest.coinapi.io/v1/ohlcv/{}/USD/latest'
         self._download_limit = 100000
         self._update_limit = 1000
 
     def _get_date_column_name(self) -> str:
         return 'time_period_end'
-
     def _get_request_params(self) -> dict:
         return {
             'period_id': self._historical_frequency.value,

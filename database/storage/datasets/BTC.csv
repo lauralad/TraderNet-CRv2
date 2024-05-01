@@ -1,0 +1,1 @@
+date,open,high,low,close,volume,trades,hour,open_log_returns,high_log_returns,low_log_returns,close_log_returns,volume_log_returns,trades_log_returns,dema,vwap,macd_signal_diffs,rsi,stoch,cci,adx,aroon_up,aroon_down,bband_up,bband_down,adl,obv,close_dema,close_vwap,bband_up_close,close_bband_down,adl_diffs,obv_diffs,trends

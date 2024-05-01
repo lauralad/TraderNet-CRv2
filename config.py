@@ -21,7 +21,7 @@ supported_cryptos = {
 }
 
 ohlcv_dataset_period_id = OHLCVDownloader.HistoricalFrequency.HOUR
-ohlcv_history_filepath = 'database/storage/downloads/ohlcv/{}.csv'
+ohlcv_history_filepath = './database/storage/downloads/coinapi/ohlcv/{}.csv'
 gtrends_history_filepath = 'database/storage/downloads/gtrends/{}.csv'
 dataset_save_filepath = 'database/storage/datasets/{}.csv'
 all_features = [

@@ -17,7 +17,7 @@ class TechnicalAnalysisPreprocessing(DatasetPreprocessing):
             ta_df['bband_up_close'] = ta_df['bband_up'] - self._closes
             ta_df['close_bband_down'] = self._closes - ta_df['bband_down']
         if 'adl' in ta_df_columns:
-            ta_df['adl_diffs'] = ta_df['adl'].diff()
+            ta_df['adl_diffs2'] = ta_df['adl'].diff()
         if 'obv' in ta_df_columns:
-            ta_df['obv_diffs'] = ta_df['obv'].diff()
+            ta_df['obv_diffs2'] = ta_df['obv'].diff()
         return ta_df
